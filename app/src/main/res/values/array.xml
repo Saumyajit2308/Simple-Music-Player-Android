@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <string-array name="song_options">
+        <item>Add to Playlist</item>
+        <item>Go to Artist</item>
+        <item>Go to Album</item>
+        <item>File Info</item>
+    </string-array>
+
+    <string-array name="playlist_options">
+        <item>Rename Playlist</item>
+        <item>Delete Playlist</item>
+    </string-array>
+
+</resources>

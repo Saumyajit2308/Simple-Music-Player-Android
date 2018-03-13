@@ -1,0 +1,71 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/rect_ripple_background_color"
+    android:onClick="playlistPicked">
+
+    <ImageView
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:id="@+id/playlist_img"
+        android:layout_gravity="center_vertical"
+        android:src="@drawable/default_cover"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginBottom="1dp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="5dp"
+        android:layout_weight="1"
+        android:layout_gravity="center_vertical">
+
+        <TextView
+            android:id="@+id/playlist_title"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#bb000000"
+            android:textSize="17sp"
+            android:textAlignment="gravity"
+            android:layout_marginRight="20dp"
+            android:gravity="left"
+            android:textStyle="bold"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="Playlist Title" />
+
+        <TextView
+            android:id="@+id/playlist_numtracks"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#66000000"
+            android:textSize="14sp"
+            android:textAlignment="gravity"
+            android:layout_marginRight="20dp"
+            android:gravity="left"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:text="Number of Tracks" />
+
+    </LinearLayout>
+
+    <ImageButton
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/playlist_shuffleButton"
+        android:stateListAnimator="@anim/fade_alpha_animation"
+        android:src="@drawable/ic_shuffle_white_24dp"
+        android:transitionName="shuffleButton"
+        android:tint="@color/black"
+        android:background="@color/transparent"
+        android:adjustViewBounds="true"
+        android:layout_margin="5dp"
+        android:onClick="playlistShufflePressed"
+        android:paddingRight="15dp" />
+
+</LinearLayout>
